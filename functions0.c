@@ -22,7 +22,7 @@ void exec_cmd(const char *cmd)
 	int status;
 	const char **args = malloc(2 * sizeof(char *));
 	char cmd_cpy[1024];
-        pid_t pid;
+	pid_t pid;
 
 	strncpy(cmd_cpy, cmd, 1024);
 	args[0] = strtok(cmd_cpy, " \t\n");
